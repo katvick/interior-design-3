@@ -278,3 +278,23 @@ button {
   transition: 0.5s;
 }
 
+.portfolio {
+  padding-top: 88px;
+  padding-bottom: 100px;
+}
+
+.portfolio__title {
+  margin-bottom: 51px;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  /* wrap - разрешаем переносить карточки, если не влезает */
+  /* по-умолчанию запрещается пернос */
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+
+
