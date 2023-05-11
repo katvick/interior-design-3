@@ -52,6 +52,10 @@ button {
   display: inline-block; 
 }
 
+button, input {
+  outline: none;
+}
+
 /* =====настройки текста===== */
 
 .h1, .h2 {
@@ -164,6 +168,7 @@ button {
   display: flex;
   align-items: center;
   cursor: pointer;
+  outline: none;
 }
 
 .start-video__btn {
@@ -296,5 +301,20 @@ button {
   row-gap: 20px;
 }
 
+.portfolio-card {
+  width: 400px;
+  height: 440px;
+  overflow: hidden;
+  /* чтобы размер карточки оставался прежним */
+}
 
+.portfolio-card img {
+  transition: 0.5s;
+}
+
+.portfolio-card:hover img{
+  transform: scale(1.05);
+  /* увеличение элемента на 5% при наведении курсора */
+  filter: grayscale();
+}
 
