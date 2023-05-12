@@ -329,6 +329,10 @@ button, input {
   flex-shrink: 0;
 }
 
+.about__title {
+  margin-bottom: 97px;
+}
+
 .about__content {
   display: flex;
   column-gap: 115px;
@@ -363,4 +367,8 @@ button, input {
 
 .about__statistic-item span {
   color: #FFFFFF;
+}
+
+.animated-number num {
+  opacity: 0;
 }
