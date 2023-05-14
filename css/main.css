@@ -392,8 +392,15 @@ textarea::placeholder {
   margin-bottom: 91px;
 }
 
+.contacts__content {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 125px;
+}
+
 .contacts-form-wrapper {
   width: 505px;
+  flex-shrink: 0;
 }
 
 .form-input,
@@ -437,5 +444,45 @@ textarea::placeholder {
   background-color: #d8ad71;
   color:#FFFFFF;
 }
+
+.btn:active {
+  background-color: #b89360;
+  color:#FFFFFF;
+}
+
+.contacts-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 61px;
+  column-gap: 95px;
+}
+
+.contacts-list__item {
+  display: flex;
+  column-gap: 19px;
+  transition: 0.5s;
+}
+
+.contacts-list__item .text-upper {
+  margin-bottom: 3px;
+}
+
+.contacts-list__item .text-upper + * {
+  color: #907965;
+}
+
+.contacts-list__item .contacts-list__text a,
+.contacts-list__item .contacts-list__icon svg {
+  transition: 0.5s;
+}
+
+.contacts-list__item:hover .contacts-list__text a {
+  color: #b89360;
+}
+
+.contacts-list__item:hover .contacts-list__icon svg {
+  fill: #b89360;
+}
+
 
 
