@@ -137,11 +137,6 @@ textarea::placeholder {
   padding-top: 30px;
 }
 
-.header-nav {
-  display: flex;
-  column-gap: 40px;
-}
-
 .header-nav a + a {
   margin-left: 40px;
 }

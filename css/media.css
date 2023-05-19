@@ -10,6 +10,18 @@
   .container {
     width: 960px;
   }
+
+  .h1 {
+    font-size: 70px;
+  }
+
+  .header-slider__nav {
+    right: 30px;
+  }
+
+  .header-slider-wrapper .owl-dots {
+    left: 30px;
+  }
 }
 
 /* 768 - 991 : планшеты */
@@ -17,12 +29,64 @@
   .container {
     width: 730px;
   }
+
+  .h1 {
+    font-size: 60px;
+  }
+
+  .start-video__text p,
+  .header-slider-wrapper .owl-dots {
+    display: none;
+  }
 }
 
-/* 360 - 767 : телефоны*/
+/* 375 - 767 : телефоны*/
 @media(max-width:767px) {
   .container {
     width: 100%;
+  }
+
+  .header-slider-wrapper {
+    display: none;
+  }
+
+  .header {
+    height: 100vh;
+    max-height: 667px;
+  }
+
+  .header-top {
+    height: 50px;
+    padding-top: 17px;
+    text-align: center;
+  }
+
+  .header-content {
+    padding-top: 60px;
+  }
+
+  .h1 {
+    line-height: 80px;
+}
+}
+
+/* 320 - 374 */
+@media(max-width:374px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-nav a + a {
+    margin-left: 20px;
+  }
+
+  .h1 {
+    font-size: 51px;
+    line-height: 80px;
+  }
+
+  .header-title {
+    margin-bottom: 62px;
   }
 }
 
