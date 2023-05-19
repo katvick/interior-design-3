@@ -18,6 +18,15 @@ $(document).ready(function(){
     $(".header-slider").trigger('prev.owl.carousel');
   });
 
+  // header-slider
+  $('.portfolio-content-slider').owlCarousel({
+    items: 1,
+    loop: true,
+    smartSpeed: 600,
+    stagePadding: 40,
+    margin: 15,
+  })
+
   // Fancybox
   Fancybox.bind("[data-fancybox]", {
     Toolbar: {

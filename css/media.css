@@ -3,6 +3,14 @@
   .container {
     width: 1140px;
   }
+  .portfolio-content {
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+  .portfolio-card {
+    width: 360px;
+    height: 396px;
+  }
 }
 
 /* 992 - 1199 : iPad */
@@ -10,17 +18,22 @@
   .container {
     width: 960px;
   }
-
   .h1 {
     font-size: 70px;
   }
-
   .header-slider__nav {
     right: 30px;
   }
-
   .header-slider-wrapper .owl-dots {
     left: 30px;
+  }
+  .portfolio, .about, .contacts {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .portfolio-card {
+    width: 300px;
+    height: 330px;
   }
 }
 
@@ -29,14 +42,20 @@
   .container {
     width: 730px;
   }
-
   .h1 {
     font-size: 60px;
   }
-
   .start-video__text p,
   .header-slider-wrapper .owl-dots {
     display: none;
+  }
+  .portfolio-content {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .portfolio-card {
+    width: 220px;
+    height: 242px;
   }
 }
 
@@ -47,29 +66,40 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-
   .header-slider-wrapper {
     display: none;
   }
-
   .header {
     height: 100vh;
     max-height: 667px;
   }
-
   .header-top {
     height: 50px;
     padding-top: 17px;
     text-align: center;
   }
-
   .header-content {
     padding-top: 60px;
   }
-
   .h1 {
     line-height: 80px;
-}
+  }
+  .portfolio-content {
+    display: none;
+  }
+  .owl-carousel.portfolio-content-slider {
+    display: block;
+  }
+  .portfolio-content-slider .owl-dots {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .owl-dot span {
+    background-color: #e5e4e4;
+  }
+  .owl-dots button.owl-dot.active span {
+    background-color: #F6D5A7;
+  }
 }
 
 /* 320 - 374 */
@@ -77,20 +107,16 @@
   .container {
     width: 100%;
   }
-
   .header {
     max-height: 602px;
   }
-
   .header-nav a + a {
     margin-left: 13px;
   }
-
   .h1 {
     font-size: 51px;
     line-height: 80px;
   }
-
   .header-title {
     margin-bottom: 62px;
   }
