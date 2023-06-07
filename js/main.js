@@ -18,7 +18,7 @@ $(document).ready(function(){
     $(".header-slider").trigger('prev.owl.carousel');
   });
 
-  // header-slider
+  // portfolio-slider
   $('.portfolio-content-slider').owlCarousel({
     items: 1,
     loop: true,
