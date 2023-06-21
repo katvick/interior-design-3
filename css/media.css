@@ -84,18 +84,12 @@
   .h1 {
     line-height: 80px;
   }
-  .portfolio-content {
-    display: none;
-  }
-  .owl-carousel.portfolio-content-slider {
-    display: block;
-  }
-  .portfolio-content-slider .owl-dots {
+  .portfolio-content .owl-dots {
     text-align: center;
     margin-top: 15px;
   }
-  .owl-dot span {
-    background-color: #e5e4e4;
+  .portfolio-card:hover img{
+    transform: scale(1);
   }
   .owl-dots button.owl-dot.active span {
     background-color: #F6D5A7;

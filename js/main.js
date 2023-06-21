@@ -19,12 +19,32 @@ $(document).ready(function(){
   });
 
   // portfolio-slider
-  $('.portfolio-content-slider').owlCarousel({
+  const owlConfig = {
     items: 1,
     loop: true,
     smartSpeed: 600,
     stagePadding: 40,
     margin: 15,
+    responsive: {
+      500: {
+        items: 2,
+
+      }
+    }
+  }
+
+  $('.portfolio-content').owlCarousel(owlConfig)
+
+  if (window.innerWidth >= 768) {
+    $('.portfolio-content').trigger('destroy.owl.carousel');
+  }
+
+  window.addEventListener('resize', () => {
+    if ( window.innerWidth >= 768) {
+      $('.portfolio-content').trigger('destroy.owl.carousel');
+    } else {
+      $('.portfolio-content').owlCarousel(owlConfig);
+    }
   })
 
   // Fancybox

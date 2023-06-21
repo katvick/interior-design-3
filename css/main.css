@@ -23,7 +23,7 @@ body {
   padding-right: 15px;
 }
 
-/* =====сброс стилей браузера===== */
+/* ===== сброс стилей браузера ===== */
 
 h1, h2, h3, h4, p, ul {
   margin: 0;
@@ -68,7 +68,7 @@ textarea::placeholder {
 
 
 
-/* =====настройки текста===== */
+/* ===== настройки текста ===== */
 
 .h1, .h2 {
   font-family: 'Lora', serif;
@@ -97,7 +97,7 @@ textarea::placeholder {
   color: #574E56;
 }
 
-/* =====настройки svg===== */
+/* ===== настройки svg ===== */
 
 .svg-arrow {
   width: 12px;
@@ -123,7 +123,7 @@ textarea::placeholder {
   height: 33px;
 }
 
-/* ======header====== */
+/* ====== header ====== */
 
 .header {
   height: 800px;
@@ -298,6 +298,8 @@ textarea::placeholder {
   transition: 0.5s;
 }
 
+/* ====== portfolio ====== */
+
 .portfolio {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -329,9 +331,7 @@ textarea::placeholder {
   filter: grayscale();
 }
 
-.owl-carousel.portfolio-content-slider {
-  display: none;
-}
+/* ====== about ====== */
 
 .about {
   padding-top: 100px;
