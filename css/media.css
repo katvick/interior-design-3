@@ -35,6 +35,24 @@
     width: 300px;
     height: 330px;
   }
+  .about__content {
+    align-items: flex-start;
+    column-gap: 50px;
+  }
+  .about__img {
+    width: 300px;
+    height: 327px;
+  }
+  .about__desc {
+    width:100%;
+  }
+  .about__statistic-item p {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .about__title {
+    margin-bottom: 50px;
+  }
 }
 
 /* 768 - 991 : планшеты */
@@ -56,6 +74,14 @@
   .portfolio-card {
     width: 220px;
     height: 242px;
+  }
+  .about__content {
+    column-gap: 28px;
+  }
+  .about__statistic-item p {
+    line-height: 90px;
+  }
+  .about__statistic {    column-gap: 66px;
   }
 }
 
@@ -94,6 +120,17 @@
   .owl-dots button.owl-dot.active span {
     background-color: #F6D5A7;
   }
+  .about__content {
+    display: block;
+  }
+  .about__text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .about__statistic-item p {
+    font-size: 73px;
+    line-height: 80px;
+}
 }
 
 /* 320 - 374 */
@@ -114,6 +151,13 @@
   .header-title {
     margin-bottom: 62px;
   }
+  .about__img {
+    width: 100%;
+    height: auto;
+  }
+  .about__statistic {
+    column-gap: 43px;
+}
 }
 
 /* для экранов 15 дм и больше будут применяться дефолтные стили */

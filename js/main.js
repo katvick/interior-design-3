@@ -28,7 +28,6 @@ $(document).ready(function(){
     responsive: {
       500: {
         items: 2,
-
       }
     }
   }
