@@ -11,6 +11,12 @@
     width: 360px;
     height: 396px;
   }
+  .contacts__content {
+    column-gap: 79px;
+  }
+  .contacts-list {
+    column-gap: 80px;
+  }
 }
 
 /* 992 - 1199 : iPad */
@@ -53,6 +59,18 @@
   .about__title {
     margin-bottom: 50px;
   }
+  .contacts__content {
+    column-gap: 63px;
+  }
+  .contacts-list {
+      column-gap: 43px;
+  }
+  .contacts-form-wrapper {
+      width: 360px;
+  }
+  .contacts__title {
+    margin-bottom: 50px;
+  }
 }
 
 /* 768 - 991 : планшеты */
@@ -82,6 +100,10 @@
     line-height: 90px;
   }
   .about__statistic {    column-gap: 66px;
+  }
+  .contacts-list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
   }
 }
 
@@ -120,7 +142,8 @@
   .owl-dots button.owl-dot.active span {
     background-color: #F6D5A7;
   }
-  .about__content {
+  .about__content,
+  .contacts__content {
     display: block;
   }
   .about__text {
@@ -130,7 +153,20 @@
   .about__statistic-item p {
     font-size: 73px;
     line-height: 80px;
-}
+  }
+  .contacts {
+    padding-bottom: 40px;
+  }
+  .contacts-form-wrapper {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .contacts-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts-list {
+      column-gap: 0px;
+  }
 }
 
 /* 320 - 374 */
@@ -157,7 +193,13 @@
   }
   .about__statistic {
     column-gap: 43px;
-}
+  }
 }
 
-/* для экранов 15 дм и больше будут применяться дефолтные стили */
+/* 0-574 */
+@media(max-width:574px){
+  .contacts-list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+}
